@@ -84,3 +84,57 @@ out=>
 }
 
 ////// cookies will completly empty ////
+
+---
+
+=> create email functionality . keu successfully register korta parla welcome email
+config =>nodemailer.js
+
+////brevo login
+
+SMTP & API
+
+1. Generate new SMTP key
+
+///Sending welcome email ===>
+
+authContoller.js =>
+
+///Sending welcome email ===>
+const mailOptions ={
+from: process.env.SENDER_EMAIL,
+to: email,
+//we get email frm the request body const {name,email,password} = req.body;
+subject:'Welcome to kb07',
+
+text:`Welcome to greatstack website.Your account has been created with email id: ${email}`
+}
+// send the mail
+
+await transporter.sendMail(mailOptions);
+
+===> create user email verification controller fnction
+==> create a function get otp.verify user account,user receive otp their email id,enter otp web app,account will verified
+
+
+
+====> create middleware that will get the cookie =>  from that cookie it will find the token ==> from that token it will find the userId ==> that user id will be added in request body ==>that will be done using a function ==>for that we will create middleware function
+
+
+===> using middleware and controller function we will create the api end point ==> authRote.js
+
+
+
+====> TEST API END POINT
+
+/send-verify-otp
+
+
+===>authController.js =>
+// chk if user is authenticated
+==> create api end point for this ==>authroute.js =>
+
+===> create another api, will send the password reset otp
+===> user verify otp and reset password
+
+
