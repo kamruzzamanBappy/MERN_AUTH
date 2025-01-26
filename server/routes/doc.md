@@ -116,19 +116,13 @@ await transporter.sendMail(mailOptions);
 ===> create user email verification controller fnction
 ==> create a function get otp.verify user account,user receive otp their email id,enter otp web app,account will verified
 
-
-
-====> create middleware that will get the cookie =>  from that cookie it will find the token ==> from that token it will find the userId ==> that user id will be added in request body ==>that will be done using a function ==>for that we will create middleware function
-
+====> create middleware that will get the cookie => from that cookie it will find the token ==> from that token it will find the userId ==> that user id will be added in request body ==>that will be done using a function ==>for that we will create middleware function
 
 ===> using middleware and controller function we will create the api end point ==> authRote.js
-
-
 
 ====> TEST API END POINT
 
 /send-verify-otp
-
 
 ===>authController.js =>
 // chk if user is authenticated
@@ -137,4 +131,5 @@ await transporter.sendMail(mailOptions);
 ===> create another api, will send the password reset otp
 ===> user verify otp and reset password
 
-
+=====>create route userRoutes.js =>
+====> add this userRouter in server.js file
